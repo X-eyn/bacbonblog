@@ -20,10 +20,10 @@
             <label for="name" class="form-label">Category Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
         </div>
-        <div class="mb-3">
+        <!-- <div class="mb-3">
             <label for="slug" class="form-label">Slug</label>
             <input type="text" class="form-control" id="slug" name="slug" required>
-        </div>
+        </div> -->
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
             <textarea class="form-control" id="description" name="description"></textarea>
@@ -32,7 +32,7 @@
             <label for="image" class="form-label">Upload Image</label>
             <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
         </div>
-        <div class="mb-3">
+        <!-- <div class="mb-3">
             <label for="meta_title" class="form-label">Meta Title</label>
             <input type="text" class="form-control" id="meta_title" name="meta_title">
         </div>
@@ -50,7 +50,7 @@
                 <option value="1">Show</option>
                 <option value="0">Hide</option>
             </select>
-        </div>
+        </div> -->
         <div class="mb-3">
             <label for="status" class="form-label">Status</label>
             <select class="form-select" id="status" name="status" required>

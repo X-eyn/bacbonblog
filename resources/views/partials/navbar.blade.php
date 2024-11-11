@@ -2,11 +2,14 @@
     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
     <li class="nav-item"><a class="nav-link" href="{{ url('/posts') }}">Blog</a></li>
 
+    @auth
     <li class="nav-item">
         <a class="nav-link" href="{{ url('posts/create') }}">
             <i class='bx bx-plus'></i> Create
         </a>
     </li>
+    @endauth
+
     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
 
     <!-- Dropdown Menu for Categories -->
