@@ -1,0 +1,185 @@
+:root {
+    /* Default (Light) Mode Colors */
+    --bg-color: #f8f9fa;
+    --sidebar-bg-color: #343a40;
+    --text-color: #343a40;
+    --list-bg-hover: #495057;
+    --btn-bg-color: #007bff;
+    --btn-hover-bg: #0056b3;
+}
+
+.dracula-mode {
+    /* Dracula Palette Colors */
+    --bg-color: #282a36;
+    --sidebar-bg-color: #282a36;
+    --text-color: #b6d11e;
+    --list-bg-hover: #44475a;
+    --btn-bg-color: #bd93f9; /* Purple */
+    --btn-hover-bg: #6272a4; /* Muted Blue */
+    --icon-color: #f1fa8c; /* Yellow */
+    --link-hover-color: #ff79c6; /* Pink */
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: var(--sidebar-bg-color);
+    color: var(--text-color);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1), background-color 0.4s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(218, 213, 213, 0.15); /* Modern shadow effect */
+}
+
+#sidebar .list-group-item {
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#sidebar .list-group-item:hover {
+    background-color: var(--list-bg-hover);
+    color: var(--link-hover-color); /* Hover text is Pink */
+}
+
+#sidebar .list-group-item i {
+    font-size: 1.2rem;
+    color: var(--icon-color); /* Icon color is Yellow */
+    transition: transform 0.3s ease;
+}
+
+#sidebar .list-group-item:hover i {
+    transform: scale(1.1); /* Icon scaling on hover */
+}
+
+/* Sidebar Toggle Button */
+#sidebarToggle, #sidebarToggleMobile {
+    background-color: var(--btn-bg-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#sidebarToggle:hover, #sidebarToggleMobile:hover {
+    background-color: var(--btn-hover-bg); /* Hover on toggle button */
+}
+
+/* Page Content */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.sidebar-header {
+    background-color: var(--list-bg-hover);
+    border-bottom: 1px solid #6272a4; /* Comment color from Dracula palette */
+}
+
+/* Sidebar*/
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    background-color: #343a40; 
+    z-index: 1000;
+}
+
+#sidebar.show {
+    transform: translateX(0);
+}
+
+#sidebarToggle, #sidebarToggleMobile {
+    font-size: 1.5rem;
+    background-color: #007bff; 
+    border: none;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+
+#sidebarToggle:hover, #sidebarToggleMobile:hover {
+    background-color: #0056b3; 
+}
+
+#page-content-wrapper {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+#page-content-wrapper.sidebar-open {
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        transform: translateX(-100%);
+        display: none;
+    }
+
+    #sidebar.show {
+        transform: translateX(0);
+        display: block;
+    }
+    
+    #page-content-wrapper {
+        margin-left: 0;
+    }
+}
+
+/* List Item */
+.list-group-item {
+    border-radius: 3px; /* Minimal rounding for a clean look */
+    background-color: transparent;
+    color: #f8f9fa;
+    padding: 0.7rem 1rem; /* Balanced padding */
+    font-weight: 500;
+    transition: 
+        background-color 0.25s ease, 
+        color 0.25s ease, 
+        box-shadow 0.2s ease, 
+        transform 0.15s ease;
+}
+
+.list-group-item:hover {
+    background-color: #495057; /* Subtle darker background on hover */
+    color: #ffffff; /* Light text color for contrast */
+    transform: translateX(3px); /* Gentle slide for modern effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Subtle shadow to lift item */
+}
+
+/* Icon Styling */
+.list-group-item i {
+    font-size: 1.2rem; /* Standard size for better alignment */
+    margin-right: 0.4rem; /* Subtle spacing */
+    color: inherit;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.list-group-item:hover i {
+    color: #f1fa8c; /* Soft yellow for icons on hover */
+    transform: translateX(2px); /* Minor shift for icon alignment */
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    background-color: #495057;
+    border-bottom: 1px solid #6c757d;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600; /* Softer font weight */
+    color: #f8f9fa;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Collapse Animation */
+.collapse {
+    transition: height 0.2s ease;
+}
