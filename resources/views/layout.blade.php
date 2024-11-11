@@ -59,7 +59,7 @@
             <!-- Authentication Links -->
             @guest
             <a href="{{ route('login') }}" class="btn btn-login">Login</a>
-            <a href="{{ route('register') }}" class="btn btn-signup">Sign Up</a>
+            <!-- <a href="{{ route('register') }}" class="btn btn-signup">Sign Up</a> -->
             @else
             <!-- Link to Profile Edit -->
             <a href="{{ route('profile.edit') }}" class="btn btn-login">{{ Auth::user()->name }}</a>

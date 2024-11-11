@@ -129,5 +129,3 @@ Route::post('/posts/{slug}/like', [PostController::class, 'likePost'])->name('li
 
 
 require __DIR__.'/auth.php';
-
-
