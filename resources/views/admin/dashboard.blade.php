@@ -73,17 +73,17 @@
                 <a href="{{ route('admin.users.index') }}" class="list-group-item list-group-item-action text-light">
                     <i class="bi bi-person me-2"></i> Users
                 </a>
-                <a href="#" class="list-group-item list-group-item-action text-light">
-                    <i class="bi bi-chat-dots me-2"></i> Messages
+                <!-- <a href="#" class="list-group-item list-group-item-action text-light">
+                    <i class="bi bi-chat-dots me-2"></i> Messages -->
                 </a>
-                <a href="#" class="list-group-item list-group-item-action text-light">
-                    <i class="bi bi-bookmark me-2"></i> Bookmark
+                <!-- <a href="#" class="list-group-item list-group-item-action text-light">
+                    <i class="bi bi-bookmark me-2"></i> Bookmark -->    
                 </a>
-                <a href="#" class="list-group-item list-group-item-action text-light">
-                    <i class="bi bi-file-earmark me-2"></i> Files
+                <!-- <a href="#" class="list-group-item list-group-item-action text-light">
+                    <i class="bi bi-file-earmark me-2"></i> Files -->
                 </a>
-                <a href="#" class="list-group-item list-group-item-action text-light">
-                    <i class="bi bi-bar-chart me-2"></i> Stats
+                <!-- <a href="#" class="list-group-item list-group-item-action text-light">
+                    <i class="bi bi-bar-chart me-2"></i> Stats -->
                 </a>
                 <a href="#" class="list-group-item list-group-item-action text-light"
                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
