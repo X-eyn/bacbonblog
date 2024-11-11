@@ -14,7 +14,7 @@
         </div>
         <div class="row mt-3">
             <div class="col-md-12 text-center">
-                <p>&copy; 2024 Nguyen Thao Blog Post. All Rights Reserved.</p>
+                <p>&copy; 2024 BacBon Limited blogsite.</p>
             </div>
         </div>
     </div>

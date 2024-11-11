@@ -1,6 +1,6 @@
 <ul class="navbar-nav mr-auto">
     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="{{ url('/posts') }}">Blog</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ url('/posts') }}">All Blogs</a></li>
 
     @auth
     <li class="nav-item">
